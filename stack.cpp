@@ -20,4 +20,10 @@ class Stack {
 private:
     // 5. inisialisasi Node top sebagai private untuk mengecek ujung dari Stack
     Node* top;
+
+public:
+    Stack() {
+        // 6. inisialisasi nilai awal top sebagai NULL
+        top = NULL;
+    }
 };
