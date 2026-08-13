@@ -26,6 +26,10 @@ public:
         // 6. inisialisasi nilai awal top sebagai NULL
         top = NULL;
     }
+    // isEmpty method
+    bool isEmpty() {
+        return top == NULL;
+    } 
 
     // 7. pembuatan method push
     int push(int value) {
@@ -36,5 +40,18 @@ public:
 
         cout << "Push Value: " << value << endl;
         return value;
+    }
+
+    // 8. pembuatan prosedur pop
+    void pop() {
+        if (isEmpty()) {
+            cout << "Stack is Empty" << endl;
+            return;
+        }
+
+        cout << "Popped Value: " << top->data << endl;
+        Node* temp = top;
+        top = top->next;
+        delete temp;
     }
 };
