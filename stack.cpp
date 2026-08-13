@@ -29,7 +29,7 @@ public:
     // isEmpty method
     bool isEmpty() {
         return top == NULL;
-    } 
+    }
 
     // 7. pembuatan method push
     int push(int value) {
@@ -53,5 +53,25 @@ public:
         Node* temp = top;
         top = top->next;
         delete temp;
+    }
+
+    // 9. pembuatan prosedur peek
+    void peek() {
+        if (top == NULL)
+        {
+            cout << "List is Empty." << endl;
+        }
+        else
+        {
+            Node* current = top;
+
+            while (current != NULL)
+            {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
+
+            cout << endl;
+        }
     }
 };
