@@ -81,4 +81,7 @@ public:
     }
 };
 
-int main() {}
+int main()
+{
+    // 11. inisialisasi object stack
+    Stack stack;
