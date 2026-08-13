@@ -110,5 +110,17 @@ int main()
                 cin >> value;
                 stack.push(value);
                 break;
-        }
+
+            // 17. kondisi jika choice = 2
+            case 2:
+                if (!stack.isEmpty())
+                {
+                    stack.pop();
+                }
+                else
+                {
+                    cout << "Stack is Empty. Cannot pop." << endl;
+                }
+                break;
+            }
     };
