@@ -13,3 +13,8 @@ public:
         next = NULL;
     }
 };
+
+// 4. inisialisasi class Stack
+class Stack {
+private:
+};
