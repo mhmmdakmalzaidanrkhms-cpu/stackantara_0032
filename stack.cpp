@@ -140,5 +140,15 @@ int main()
                 cout << "Exiting Program." << endl;
                 choice = 5;
                 break;
-            }
-    };
+
+            // 20. kondisi default jika input selain case yang ditentukan
+            default:
+                cout << "Invalid choice. Try again." << endl;
+                break;
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
