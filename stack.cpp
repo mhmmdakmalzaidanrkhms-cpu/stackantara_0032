@@ -85,3 +85,7 @@ int main()
 {
     // 11. inisialisasi object stack
     Stack stack;
+
+    // 12. inisialisasi variabel choice dan value untuk menangkap input pengguna
+    int choice = 0;
+    int value;
