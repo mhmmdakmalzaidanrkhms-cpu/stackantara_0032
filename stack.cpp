@@ -30,7 +30,7 @@ public:
     bool isEmpty() {
         return top == NULL;
     }
-
+    
     // 7. pembuatan method push
     int push(int value) {
         Node* newNode = new Node();
@@ -73,5 +73,10 @@ public:
 
             cout << endl;
         }
+    }
+
+    // 10. pembuatan method isEmpty untuk mengecek kosong tidaknya stack
+    bool isEmpty() {
+        return top == NULL;
     }
 };
